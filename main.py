@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import pickle
-import numpy as np
 import os
 
 
@@ -11,6 +10,7 @@ app = Flask(__name__)
 @app.route("/index")
 def pagina():
     return render_template("index.html")
+
 
 @app.route("/prever", methods=["POST"])
 def predicao():
@@ -24,12 +24,12 @@ def predicao():
     return (f"""Gravidade Câncer de Mama: {str(predicao)}
     | LEITURA:
     0 = Benigno
-    1 = Maglino
+    1 = Maligno
     """)
 
 
 
 
 if __name__=="__main__":
-    port =int(os.getenv("PORT", "5000"))
+    port =int(os.getenv("PORT", "7000"))
     app.run(host="0.0.0.0", port=port)
