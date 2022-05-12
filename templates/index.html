@@ -1,9 +1,26 @@
 {% extends "base.html" %}
 
     {% block conteudo %}
-
-        <form action="/index" method="post">
+        <h1> Modelo de Previsão de Câncer de Mama</h1>
+        <div id="area">
+            
+        <form action="/prever" method="post" id="form1">
+            <fieldset>
+                <label for="biraids">Bi-Raids (Exame)</label><br>
+                <input type="number" name="biraids"><br>
+                <label for="age">Idade</label><br>
+                <input type="number" name="age"><br>
+                <label for="shapemass">Formato Tumor</label><br>
+                <input type="number" name="shapemass"><br>
+                <label for="margemass">Margem Tumor</label><br>
+                <input type="number" name="margemass"><br>
+                <label for="densidade">Densidade</label><br>
+                <input type="number" name="densidade"><br>
+                <button type="submit">Enviar</button>
+                <h4> by Adolfo Matias</h4>
+            </fieldset>
             
         </form>
+    </div>
 
     {% endblock %}
