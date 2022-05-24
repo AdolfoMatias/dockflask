@@ -1,6 +1,7 @@
-mlruns/
+.\nmlruns/
 newp/
 Procfike
 confusao.png
 __pycache__/
 __pycache__
+./teste_rapido.py
