@@ -11,12 +11,12 @@
 
 - 6 atributos no total (1 classe, 1 não preditivo, 4 atributos preditivos)
 
-- 1. BI-RADS assessment: 1 a 5 (ordinal, não preditivo)
-- 2. Age:idade em anos (integer)
-- 3. mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal)
-- 4. mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 spiculated=5 (nominal)
-- 5.mass density high=1 iso=2 low=3 fat-containing=4 (ordinal)
-- 6. GFravidade: benigno=0 or maligno=1 (binominal,meta)
+- 1- BI-RADS assessment: 1 a 5 (ordinal, não preditivo)
+- 2- Age:idade em anos (integer)
+- 3- mass shape: round=1 oval=2 lobular=3 irregular=4 (nominal)
+- 4- mass margin: circumscribed=1 microlobulated=2 obscured=3 ill-defined=4 spiculated=5 (nominal)
+- 5- mass density high=1 iso=2 low=3 fat-containing=4 (ordinal)
+- 6- GFravidade: benigno=0 or maligno=1 (binominal,meta)
 
 ### 5 - Arquivos importantes
 - Arquivo principal: main.py
